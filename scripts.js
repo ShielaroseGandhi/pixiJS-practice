@@ -51,9 +51,18 @@ function setup() {
     lolli.scale.set(0.8, 0.8);
 
     //Rotate
-    lolli.anchor.x = 0.5;
-    lolli.anchor.y = 0.5;
-    lolli.rotation = 1;
+    // lolli.anchor.x = 0.5;
+    // lolli.anchor.y = 0.5;
+    // lolli.rotation = 1;
+
+    //Start the game loop by adding the `gameLoop` function to
+    //Pixi's `ticker` and providing it with a `delta` argument.
+    // app.ticker.add(delta => gameLoop(delta));
+
+    function gameLoop(delta){
+        //Move the cat 1 pixel
+        lolli.x += 1;
+    }
 
 
 
